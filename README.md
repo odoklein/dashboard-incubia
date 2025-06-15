@@ -34,3 +34,20 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Real-time Pong with Socket.IO
+
+This repo contains a simple multiplayer Pong game. Run the Socket.IO server with:
+
+```bash
+node server.js
+```
+
+Open `http://localhost:3001` in two browser windows to play.
+
+### Deploying to Render
+
+1. Push this repository to GitHub.
+2. Create a **Web Service** on [Render](https://render.com/).
+3. Set the build command to `npm install` and the start command to `node server.js`.
+4. The `PORT` environment variable is provided automatically by Render.
